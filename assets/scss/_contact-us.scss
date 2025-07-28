@@ -1,0 +1,149 @@
+.contact-us-area {
+  padding-bottom: 115px;
+  .heading {
+    padding: 115px 0 80px 0;
+    h2 {
+      font-family: $robot;
+      font-weight: 500;
+      font-size: 35px;
+      color: $dip;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p {
+      font-family: $robot;
+      font-weight: 400;
+      font-size: 16px;
+      color: $pfont;
+      text-align: center;
+      line-height: 25px;
+    }
+  }
+  .contact-form {
+    input {
+      height: 53px;
+      border: 1px solid #dedede;
+      border-radius: 0;
+      margin-bottom: 23px;
+      background: #f8f8f8;
+      @include transition;
+      @include placeholder {
+        font-family: $robot;
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+      &:focus {
+        border: 1px solid $lavender;
+        box-shadow: none;
+      }
+    }
+    textarea {
+      height: 200px;
+      width: 100%;
+      border: 1px solid #dedede;
+      border-radius: 0;
+      text-transform: capitalize;
+      padding: 15px 0 0 15px;
+      background: #f8f8f8;
+      resize: none;
+      display: block;
+      &:focus {
+        border: 1px solid $lavender;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    .submit {
+      text-align: left;
+      a {
+        border: 1px solid $dip;
+        text-decoration: none;
+        font-family: $robot;
+        font-weight: 400;
+        font-size: 20px;
+        color: $dip;
+        padding: 0 30px;
+        line-height: 45px;
+        display: inline-block;
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 27px;
+        position: relative;
+        transition: all 300ms linear 0s;
+        z-index: 1;
+        &:before {
+          content: "";
+          background: #7638ff;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          transition-property: transform;
+          transition-timing-function: ease-out;
+          transition: 0.5s;
+          transform: scale(0);
+          border-radius: 27px;
+          z-index: -1;
+        }
+        &:hover {
+          border: 1px solid #fff;
+          color: #fff;
+          &:before {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+  .contact-image {
+    @include transition;
+    .contact {
+      position: relative;
+      @include transition;
+      img {
+        max-width: 100%;
+        @include transition;
+        z-index: -1;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        z-index: 1;
+        @include transition;
+      }
+    }
+    &:hover {
+      .contact {
+        img {
+          transform: scale(1.05);
+        }
+        &:before {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+.map-area-full {
+  .map_area {
+    .mapBox {
+      min-height: 440px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}

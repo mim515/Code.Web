@@ -1,0 +1,311 @@
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursormAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes seventy {
+  0% {
+    top: 91px;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 91px;
+  }
+}
+
+@keyframes sale {
+  0% {
+    left: 300px;
+  }
+  50% {
+    left: 344px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+
+@keyframes fifty {
+  0% {
+    top: 151px;
+  }
+  50% {
+    top: 100px;
+  }
+  100% {
+    top: 151px;
+  }
+}
+
+@keyframes newyellow {
+  0% {
+    left: 166px;
+  }
+  50% {
+    left: 120px;
+  }
+  100% {
+    left: 166px;
+  }
+}
+
+@keyframes percent {
+  0% {
+    top: 301px;
+  }
+  50% {
+    top: 330px;
+  }
+  100% {
+    top: 301px;
+  }
+}
+
+@keyframes free {
+  0% {
+    left: 362px;
+    top: 395px;
+  }
+  50% {
+    left: 400px;
+    top: 370px;
+  }
+  100% {
+    left: 362px;
+    top: 395px;
+  }
+}
+
+@keyframes bigSale {
+  0% {
+    left: 469px;
+  }
+  50% {
+    left: 480px;
+  }
+  100% {
+    left: 469px;
+  }
+}
+
+@keyframes blackFriday {
+  0% {
+    top: 330px;
+  }
+  50% {
+    top: 316px;
+  }
+  100% {
+    top: 330px;
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0;
+    top: 5px;
+    right: 5px;
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes gone {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes triLeft {
+  0% {
+    bottom: 80px;
+    right: 80px;
+  }
+  50% {
+    bottom: 500px;
+    right: 500px;
+  }
+  100% {
+    bottom: 80px;
+    right: 80px;
+  }
+}
+
+@keyframes cirTop {
+  0% {
+    top: 112px;
+    left: 239px;
+  }
+  50% {
+    top: 560px;
+    left: 560px;
+  }
+  100% {
+    top: 112px;
+    left: 239px;
+  }
+}
+@keyframes cirbot {
+  0% {
+    bottom: 154px;
+    left: 300px;
+  }
+  50% {
+    bottom: 550px;
+    left: 700px;
+  }
+  100% {
+    bottom: 154px;
+    left: 300px;
+  }
+}
+
+@keyframes twoType {
+  0% {
+    top: 32px;
+  }
+  50% {
+    top: 90px;
+  }
+  100% {
+    top: 32px;
+  }
+}
+
+@keyframes grant {
+  0% {
+    top: 33px;
+  }
+  50% {
+    top: 60px;
+  }
+  100% {
+    top: 33px;
+  }
+}
+
+@keyframes emit {
+  0% {
+    top: 90px;
+  }
+  50% {
+    top: 117px;
+  }
+  100% {
+    top: 90px;
+  }
+}
+
+@keyframes doted {
+  0% {
+    left: 25%;
+  }
+  50% {
+    left: 31%;
+  }
+  100% {
+    left: 25%;
+  }
+}
+
+@keyframes eyeOne {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes eyeTwo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
+
+@keyframes vut {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -30px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes part1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes part2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes part3 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

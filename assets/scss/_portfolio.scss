@@ -1,0 +1,134 @@
+.portfolio-area {
+  padding: 115px 0 0 0;
+  .portfolio-content {
+    h3 {
+      font-family: $robot;
+      font-weight: 500;
+      font-size: 35px;
+      color: $dip;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 15px;
+    }
+    p {
+      font-family: $robot;
+      font-weight: 400;
+      font-size: 16px;
+      color: $pfont;
+      max-width: 570px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .gallery_filter {
+      padding: 60px 0;
+      ul {
+        text-align: center;
+        li {
+          display: inline-grid;
+          font-family: $robot;
+          font-weight: 400;
+          font-size: 18px;
+          color: $black;
+          text-transform: capitalize;
+          margin: 0 15px;
+          cursor: pointer;
+          @include transition;
+          padding: 5px 7px;
+          border: 1px solid transparent;
+        }
+        .active {
+          border: 1px solid $lavender;
+          color: $lavender;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-image {
+  .gallery_item {
+    margin: 0 10px;
+    .single_item {
+      margin-bottom: 30px;
+      .portfolio {
+        position: relative;
+        .image-wrapper {
+          background: rgba(118, 56, 255, 0.9);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition-property: transform;
+          transform: rotateX(-90deg);
+          @include transition;
+          transform-origin: top;
+          span {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            i {
+              color: #fff;
+            }
+          }
+          .main-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            h5 {
+              font-family: $robot;
+              font-weight: 500;
+              font-size: 18px;
+              color: #fff;
+              text-transform: uppercase;
+              margin: 10px 0 10px 0;
+            }
+            h6 {
+              font-family: sharg;
+              font-weight: 300;
+              font-size: 14px;
+              color: #fff;
+              text-transform: capitalize;
+            }
+          }
+          a {
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-family: $robot;
+            border-bottom: 1px solid transparent;
+            overflow: hidden;
+            @include transition;
+            &:before {
+              content: "";
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              left: -70px;
+              transform-origin: left;
+              border-bottom: 1px solid #fff;
+              opacity: 0;
+              @include transition;
+            }
+            &:hover {
+              &:before {
+                opacity: 1;
+                left: 0;
+              }
+            }
+          }
+        }
+        &:hover {
+          .image-wrapper {
+            transform: rotateX(0);
+          }
+        }
+      }
+    }
+  }
+}

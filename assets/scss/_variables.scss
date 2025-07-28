@@ -1,0 +1,48 @@
+/*font Variables*/
+$robot: "Roboto", sans-serif;
+
+/*Color Variables*/
+$baseColor: #1a0551;
+$dip: #4d3483;
+$pfont: #4f4e50;
+$black: #171027;
+$lavender: #7638ff;
+$prgba: rgba(248, 248, 248, 0.8);
+$pink: linear-gradient(-180deg, #fff 0%, #fdf5f5 50%);
+$lpink: #ea1d62;
+$ppink: #b4299a;
+$fpink: #c719fd;
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+@font-face {
+  font-family: "sharg";
+  src: url("../fonts/ShragScript.woff");
+}
+
+// Mixins
+@mixin transition(
+  $property: all,
+  $duration: 300ms,
+  $animate: linear,
+  $delay: 0s
+) {
+  transition: $property $duration $animate $delay;
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}

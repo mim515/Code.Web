@@ -1,0 +1,255 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+p,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+// cursor mouse css
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 1s infinite alternate;
+  pointer-events: none;
+  z-index: 99999;
+  position: relative;
+  display: none;
+  &:after {
+    content: "";
+    background: red;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(50%);
+    animation: cursorAnim2 0.5s infinite linear;
+    z-index: -1;
+  }
+  &:before {
+    content: "";
+    background: #fff;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 6px;
+    left: 32px;
+    z-index: 1;
+  }
+}
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  background: 4px solid red;
+}
+
+// cursor mouse css
+
+// sticky menu css
+
+// sticky menu css
+
+.header-area-2 {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  .bg-light {
+    background-color: transparent !important;
+    padding: 0 25px 0 60px;
+    .navbar-nav {
+      margin-top: 2px;
+      .nav-item {
+        margin: 0 14px;
+        .nav-link {
+          font-family: $robot;
+          font-size: 18px;
+          text-transform: capitalize;
+          color: $fpink;
+          font-weight: 500;
+          border-bottom: 2px solid transparent;
+          @include transition;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          &:before {
+            content: "";
+            border-bottom: 2px solid $fpink;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            transition-property: transform;
+            transition-timing-function: ease-in;
+            transform: scale(0);
+            transition: 0.5s;
+          }
+          &:hover {
+            &:before {
+              transform: scale(1);
+            }
+          }
+        }
+        .current {
+          color: $fpink;
+          &:before {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+
+  .search-box {
+    .search-btn {
+      text-decoration: none;
+      span {
+        color: #fff;
+        background: $fpink;
+        padding: 5px 10px;
+        border-radius: 4px;
+        margin-left: 10px;
+        &:hover {
+          box-shadow: 3px 7px 36px -4px rgba(214, 148, 214, 1);
+        }
+      }
+    }
+
+    .search-me {
+      font-family: $robot;
+      font-size: 17px;
+      font-weight: 400;
+      color: $black;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $fpink;
+      position: absolute;
+      bottom: -25px;
+      right: 0px;
+      width: 235px;
+      height: 42px;
+      opacity: 0;
+      @include transition;
+      @include placeholder {
+        font-family: $robot;
+        font-size: 18px;
+        font-weight: 500;
+        color: $fpink;
+        text-transform: capitalize;
+        padding-left: 7px;
+      }
+    }
+  }
+  .show-search {
+    .search-me {
+      opacity: 1;
+      right: 25px;
+    }
+  }
+}
+.header-shape {
+  padding-bottom: 252px;
+  position: relative;
+  .header-content {
+    padding-top: 235px;
+    h2 {
+      font-family: $robot;
+      font-weight: 700;
+      font-size: 48px;
+      color: $dip;
+      text-transform: capitalize;
+    }
+
+    h5 {
+      font-family: $robot;
+      font-size: 17px;
+      font-weight: 500;
+      color: $fpink;
+      font-style: italic;
+      text-transform: capitalize;
+      margin: 28px 0 16px 0;
+    }
+    p {
+      color: $pfont;
+      font-family: $robot;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      max-width: 530px;
+      margin-bottom: 38px;
+    }
+    .homming {
+      text-decoration: none;
+      font-family: $robot;
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $dip;
+      text-transform: capitalize;
+      display: inline-block;
+      border: 1px solid $dip;
+      padding: 13px 25px;
+      position: relative;
+      z-index: 1;
+      @include transition;
+      &:before {
+        content: "";
+        background: $dip;
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition-property: transform;
+        @include transition;
+        transform-origin: 0 50%;
+        transform: scaleX(0);
+        z-index: -1;
+      }
+      &:hover {
+        color: #fff;
+        &:before {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+  ul {
+    li {
+      &:first-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      &:last-child {
+        position: absolute;
+        top: 150px;
+        right: 0;
+        width: 825px;
+      }
+    }
+  }
+}

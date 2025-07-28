@@ -1,0 +1,52 @@
+.dream-area {
+  .image-area {
+    position: relative;
+    .dream-1 {
+      max-width: 100%;
+      margin-top: 24px;
+    }
+    .dream-2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .image-description {
+    margin-left: 20px;
+    h2 {
+      font-family: $robot;
+      font-weight: 700;
+      font-size: 48px;
+      color: $dip;
+      text-transform: capitalize;
+    }
+    h5 {
+      font-family: $robot;
+      font-size: 17px;
+      font-weight: 500;
+      color: $fpink;
+      font-style: italic;
+      text-transform: capitalize;
+      margin: 28px 0 16px 0;
+    }
+    .para {
+      color: $pfont;
+      font-family: $robot;
+      font-size: 16px;
+      font-weight: 400;
+      max-width: 530px;
+      margin-bottom: 24px;
+      line-height: 28px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #eee;
+    }
+    p {
+      color: $pfont;
+      font-family: $robot;
+      font-size: 16px;
+      font-weight: 400;
+      max-width: 530px;
+      line-height: 28px;
+    }
+  }
+}

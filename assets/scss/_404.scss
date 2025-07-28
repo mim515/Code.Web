@@ -1,0 +1,189 @@
+.not-founding-bg {
+  .shape {
+    > li {
+      &:first-child {
+        position: absolute;
+        left: 65px;
+        top: 35px;
+        opacity: 0.3;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.3;
+      }
+      &:nth-child(3) {
+        position: absolute;
+        right: 270px;
+        bottom: 100px;
+        opacity: 0.3;
+      }
+      &:nth-child(4) {
+        position: absolute;
+        left: 200px;
+        bottom: 65px;
+        opacity: 0.3;
+      }
+      &:nth-child(5) {
+        position: absolute;
+        top: 19%;
+        left: 53%;
+        transform: translateX(-50%) translateY(-50%);
+        animation: part1 2s steps(25, end) 0s infinite;
+        opacity: 1;
+      }
+      &:nth-child(6) {
+        position: absolute;
+        top: 20%;
+        left: 54%;
+        transform: translateX(-50%) translateY(-50%);
+        animation: part2 4s steps(25, end) 0s infinite;
+        opacity: 0;
+      }
+      &:nth-child(7) {
+        position: absolute;
+        top: 21%;
+        left: 54.8%;
+        transform: translateX(-50%) translateY(-50%);
+        animation: part3 2s steps(25, end) 0s infinite;
+        opacity: 1;
+      }
+    }
+  }
+  .number-area {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    .number {
+      font-family: $robot;
+      font-weight: 800;
+      z-index: 1;
+      text-align: center;
+      span {
+        color: #fff;
+        font-size: 340px;
+        position: relative;
+        top: 100px;
+      }
+      .vutt {
+        position: relative;
+        display: inline-block;
+        top: 0px;
+        animation: vut 5s infinite linear;
+        .circle {
+          a {
+            &:nth-child(1) {
+              position: absolute;
+              top: 62px;
+              left: 62px;
+              height: 20px;
+              width: 20px;
+              border-radius: 50%;
+              background: #272525;
+              z-index: 4;
+              animation: eyeOne 5s infinite linear alternate;
+              &:before {
+                content: "";
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                top: 0;
+                left: 10px;
+                background: red;
+                border-radius: 50%;
+              }
+            }
+            &:nth-child(2) {
+              position: absolute;
+              top: 62px;
+              right: 62px;
+              height: 20px;
+              width: 20px;
+              border-radius: 50%;
+              background: #272525;
+              z-index: 2;
+              animation: eyeTwo 5s infinite linear alternate;
+              &:before {
+                content: "";
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                top: 0;
+                left: 10px;
+                background: red;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .social-icon {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 35px;
+      ul {
+        li {
+          display: inline-grid;
+          margin-right: 8px;
+          a {
+            text-decoration: none;
+            font-size: 21px;
+            color: $dip;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background: #fff;
+            line-height: 45px;
+            text-align: center;
+            border: 1px solid #fff;
+            @include transition;
+            &:hover {
+              background: transparent;
+              border: 1px solid #fff;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    h3 {
+      font-family: $robot;
+      font-weight: 600;
+      color: #fff;
+      font-size: 30px;
+      text-transform: capitalize;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    p {
+      font-family: $robot;
+      font-weight: 400;
+      color: #fff;
+      font-size: 22px;
+      text-transform: capitalize;
+      text-align: center;
+      a {
+        text-decoration: none;
+        font-family: $robot;
+        font-weight: 400;
+        color: red;
+        font-size: 22px;
+        text-transform: capitalize;
+        margin-left: 8px;
+        border-bottom: 1px solid red;
+        @include transition;
+        &:hover {
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+}
+#particles-js {
+  background: #000;
+  height: 100%;
+}

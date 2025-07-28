@@ -1,0 +1,232 @@
+.sector-service-area {
+  background: #f2f2f2;
+  .heading {
+    h2 {
+      font-family: $robot;
+      font-weight: 700;
+      font-size: 48px;
+      color: $dip;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 22px;
+      @include transition;
+      &:hover {
+        color: $lavender;
+      }
+    }
+    p {
+      font-family: $robot;
+      font-weight: 400;
+      font-size: 16px;
+      color: $pfont;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .sector-area {
+    text-align: center;
+    .single-sector {
+      @include transition;
+      margin-top: 80px;
+      .image-part {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .content {
+        padding-top: 30px;
+        h4 {
+          font-family: $robot;
+          font-weight: 600;
+          font-size: 22px;
+          color: $dip;
+          text-transform: capitalize;
+        }
+        p {
+          font-family: $robot;
+          font-weight: 400;
+          font-size: 16px;
+          color: $pfont;
+          margin-top: 20px;
+        }
+      }
+      &:hover {
+        .content {
+          h4 {
+            color: $lavender;
+          }
+        }
+      }
+    }
+  }
+}
+
+.feature-area {
+  .heading {
+    h2 {
+      font-family: $robot;
+      font-weight: 700;
+      font-size: 48px;
+      color: $dip;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 22px;
+      @include transition;
+      &:hover {
+        color: $lavender;
+      }
+    }
+    p {
+      font-family: $robot;
+      font-weight: 400;
+      font-size: 16px;
+      color: $pfont;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .work-part {
+    margin-top: 60px;
+    background: #fff;
+    padding: 15px 0 0px 0;
+
+    .single-work {
+      display: flex;
+      margin-bottom: 60px;
+      .image {
+        width: 14%;
+        cursor: pointer;
+        color: $dip;
+        font-size: 27px;
+        @include transition;
+      }
+      .work-details {
+        width: 86%;
+        h3 {
+          font-family: $robot;
+          font-weight: 600;
+          color: $dip;
+          font-size: 21px;
+          text-transform: uppercase;
+          margin-top: -9px;
+          margin-bottom: 10px;
+          @include transition;
+        }
+        p {
+          font-family: $robot;
+          font-weight: 400;
+          color: $pfont;
+          font-size: 16px;
+          line-height: 27px;
+        }
+      }
+      &:hover {
+        .image {
+          color: $lavender;
+        }
+        .work-details {
+          h3 {
+            color: $lavender;
+          }
+        }
+      }
+    }
+  }
+}
+.extra-feature-area {
+  margin-top: -60px;
+  padding-bottom: 115px;
+  .heading {
+    h2 {
+      font-family: $robot;
+      font-weight: 700;
+      font-size: 48px;
+      color: $dip;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+      @include transition;
+      &:hover {
+        color: $lavender;
+      }
+    }
+    p {
+      font-family: $robot;
+      font-weight: 400;
+      font-size: 16px;
+      color: $pfont;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .box-area {
+    .main-box {
+      margin-top: 80px;
+      perspective: 1000px;
+      .flip-box {
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        transition: all 0.5s;
+        transform-style: preserve-3d;
+        position: relative;
+        border-radius: 17px;
+        box-shadow: 0px 10px 19px 0px rgba(168, 168, 168, 0.4);
+        .front {
+          text-align: center;
+          padding: 40px;
+          padding-top: 60px;
+          border-radius: 17px;
+          position: relative;
+          border-radius: 17px;
+          backface-visibility: hidden;
+          .image-area {
+            padding-bottom: 35px;
+          }
+          h2 {
+            color: $dip;
+            text-transform: uppercase;
+            font-family: $robot;
+            font-size: 20px;
+            font-weight: 600;
+          }
+          p {
+            color: $pfont;
+            font-family: $robot;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-top: 15px;
+          }
+        }
+        .back {
+          background: $lavender;
+          height: 100%;
+          width: 100%;
+          padding: 85px 20px;
+          text-align: center;
+          transform: rotateY(180deg);
+          backface-visibility: hidden;
+          position: absolute;
+          border-radius: 17px;
+          top: 0;
+          left: 0;
+          p {
+            color: #fff;
+            font-family: $robot;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 30px;
+          }
+        }
+      }
+      &:hover {
+        .flip-box {
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+}

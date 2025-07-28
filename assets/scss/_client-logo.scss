@@ -1,0 +1,53 @@
+.client-logo-area {
+  padding: 75px 0;
+  position: relative;
+  @include transition;
+  .client-slider {
+    @include transition;
+    .owl-carousel {
+      padding: 40px 0;
+      .owl-item {
+        img {
+          width: auto;
+          @include transition;
+          margin: 0 auto;
+        }
+      }
+    }
+    .customer {
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff;
+      background: $lavender;
+      padding: 0 30px;
+      line-height: 45px;
+      display: inline-block;
+      margin-top: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 27px;
+      position: absolute;
+      top: 40%;
+      left: 48%;
+      transform: translateX(-50%) translateY(-50%);
+      @include transition;
+      opacity: 0;
+    }
+    &:hover {
+      .owl-carousel {
+        filter: blur(5px);
+        .owl-item {
+          img {
+            opacity: 0.5;
+          }
+        }
+      }
+      .customer {
+        opacity: 1;
+        left: 50%;
+      }
+    }
+  }
+}

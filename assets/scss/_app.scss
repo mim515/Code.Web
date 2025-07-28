@@ -1,0 +1,132 @@
+.app-area {
+  .heading {
+    text-align: right;
+    margin-right: 50px;
+    h2 {
+      font-family: $robot;
+      font-weight: 700;
+      font-size: 48px;
+      color: $dip;
+      text-transform: capitalize;
+    }
+    p {
+      font-family: $robot;
+      font-weight: 500;
+      font-size: 17px;
+      color: $ppink;
+      font-style: italic;
+    }
+  }
+  .details {
+    margin-top: 60px;
+    margin-right: 50px;
+    text-align: right;
+    .details-1 {
+      display: flex;
+      margin-bottom: 35px;
+      .content {
+        width: 82%;
+        h4 {
+          font-family: $robot;
+          font-weight: 600;
+          font-size: 27px;
+          color: $dip;
+          text-transform: capitalize;
+          @include transition;
+        }
+        p {
+          font-family: $robot;
+          font-weight: 400;
+          font-size: 17px;
+          color: $pfont;
+          line-height: 22px;
+          margin-top: 12px;
+        }
+      }
+      .icon {
+        width: 18%;
+        position: relative;
+        .hover-line {
+          position: relative;
+          &:before {
+            content: "";
+            width: 0px;
+            height: 1px;
+            background: $lavender;
+            position: absolute;
+            top: 33px;
+            left: 93px;
+            display: block;
+            z-index: 1;
+            @include transition;
+          }
+          .dot {
+            width: 22px;
+            height: 22px;
+            background: rgba(118, 56, 255, 0.3);
+            border-radius: 50%;
+            position: absolute;
+            top: 25px;
+            right: -430px;
+            opacity: 0;
+            transition: 1s;
+            z-index: 2;
+            .dot2 {
+              width: 10px;
+              height: 10px;
+              background: rgba(77, 52, 131, 0.5);
+              border-radius: 50%;
+              position: absolute;
+              top: 6px;
+              right: 6px;
+              opacity: 0;
+              transition: 1s;
+            }
+          }
+        }
+        .icon-one {
+          float: right;
+          width: 70px;
+          height: 70px;
+          color: #000;
+          background: #fff;
+          border-radius: 50%;
+          box-shadow: 0px 7px 18px 0px rgba(0, 0, 0, 0.11);
+          line-height: 70px;
+          text-align: center;
+          font-size: 24px;
+          color: #000;
+          @include transition;
+        }
+      }
+      &:hover {
+        h4 {
+          color: $lavender;
+        }
+        .icon {
+          .icon-one {
+            color: $lavender;
+          }
+          .hover-line {
+            &:before {
+              width: 416px;
+            }
+            .dot {
+              opacity: 1;
+              .dot2 {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile {
+    float: right;
+    margin-top: 90px;
+    .app-image {
+      z-index: -1;
+    }
+  }
+}

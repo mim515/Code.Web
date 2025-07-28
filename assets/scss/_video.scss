@@ -1,0 +1,127 @@
+.video-area {
+  height: 650px;
+  background-image: -webkit-linear-gradient(
+    13deg,
+    #190550 0%,
+    #30065a 53%,
+    #3e0760 76%,
+    #451088 100%
+  );
+  z-index: -1;
+  position: relative;
+  .shape-top {
+    top: -1px;
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    transform: rotate(180deg);
+    fill: #fff;
+    z-index: 1;
+  }
+  .shape-bottom {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    bottom: -1px;
+    left: 0;
+    z-index: 1;
+    fill: #fff;
+  }
+  .video-bg {
+    background: url(../images/app/video_bg.jpg) no-repeat scroll center 0 /
+      cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.1;
+  }
+  .open-icon {
+    z-index: 5;
+    .open-before {
+      position: relative;
+      &:before {
+        content: "";
+        background: rgba(255, 255, 255, 0.3);
+        height: 125px;
+        width: 125px;
+        border-radius: 50%;
+        position: absolute;
+        top: -366px;
+        left: 505px;
+        z-index: -1;
+      }
+      &:after {
+        content: "";
+        background: rgba(255, 255, 255, 0.3);
+        height: 125px;
+        width: 125px;
+        border-radius: 50%;
+        position: absolute;
+        top: -366px;
+        left: 505px;
+        z-index: -1;
+        animation: gone 1.5s infinite linear;
+      }
+    }
+
+    a {
+      font-size: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      line-height: 40px;
+      transform: translateX(-50%) translate(-50%);
+      text-align: center;
+      i {
+        color: $dip;
+      }
+      &:before {
+        content: "";
+        background: #fff;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        position: absolute;
+        top: -24px;
+        left: -31px;
+        z-index: -1;
+      }
+      &:after {
+        content: "";
+        background: rgba(255, 255, 255, 0.4);
+        height: 108px;
+        width: 108px;
+        border-radius: 50%;
+        position: absolute;
+        top: -33px;
+        left: -40px;
+        z-index: -1;
+      }
+    }
+  }
+  ul {
+    li {
+      &:first-child {
+        position: absolute;
+        bottom: 80px;
+        right: 80px;
+        opacity: 0.3;
+        animation: triLeft 60s infinite linear;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: 112px;
+        left: 239px;
+        opacity: 0.4;
+        animation: cirTop 60s infinite linear;
+      }
+      &:last-child {
+        position: absolute;
+        bottom: 154px;
+        left: 300px;
+        opacity: 0.3;
+        animation: cirbot 60s infinite linear;
+      }
+    }
+  }
+}
